@@ -1,0 +1,104 @@
+*{
+    font-family: 'poppins',sans-serif;
+    margin:0;
+}
+:root{
+    --main-color: #ff002b;
+    --sec-color: #4946fd;
+    --text-color: #fdfffc;
+    --bg-color: #000814;
+    --bg2-color:#333;
+}
+/*---------para modificar-------------------------------------------*/
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+/* a:hover{
+    background-color: var(--bg-color);
+
+}  */
+/*--------------------------------------------------------------*/   
+span{
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.25rem;
+    color: var(--main-color);
+}
+
+body{
+    font-size: 1.5rem;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    /* background-color: rgb(0, 255, 55);  */
+    border-bottom: 2px solid var(--main-color);
+    
+}
+.flex-main{  
+    display: flex;
+    flex: 1;
+}
+/*-----------------navegador---------------------------------------------------------*/ 
+nav {
+    background-color: var(--bg2-color);
+    margin: 0;
+    padding: 0; 
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+nav ul {
+    margin: auto;
+    padding: 0.1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 100px;
+    font-size: 72%;
+}
+
+nav ul li{
+    padding: 0.75rem;   
+}
+
+/*-----------------navegador---------------------------------------------------------*/
+.flex-article  {
+    background-color: rgb(4, 0, 255);
+    padding-top: 3rem;
+    flex: 3 3 ;
+}
+.flex-aside{
+    background-color: rgb(255, 0, 234);
+    padding-top: 3rem;
+    flex: 1 1 5rem;
+}
+.flex-footer{
+    background-color: var(--bg2-color);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 2px solid var(--main-color);
+}
+/*-----------------iframe---------------------------------------------------------*/
+/* .flex-article iframe {
+    max-width: 100%;
+    object-fit: cover;
+ 
+} */
+
+/*--------------------------------------------------------------------------------*/
+
+@media all and (max-width:540px){
+    .flex-main{
+        flex-direction: column;
+    }
+@media all and (max-width:380px){
+    nav ul {
+        flex-direction: column ;
+        justify-content: center;
+    }
+}
+}
