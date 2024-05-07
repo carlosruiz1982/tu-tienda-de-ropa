@@ -1,116 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="IE-edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE-edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda</title>
     <!--iconos de caja -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./static/css/style.css">
-    
-    
-</head>
-<body>
-   
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+  <body>
     <header>
+      <div class="nav container">
+        <a href="#" class="logo"><span>T</span>ienda</a>
 
-        <div class="nav container">
-            <a href="#" class="logo"><span>T</span>ienda</a>
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+        <div class="cart">
+          <h2 class="cart-title">Tu Carrito</h2>
 
-            <i class="bx bx-shopping-bag" id="cart-icon"></i>
-            <div class="cart">
-                <h2 class="cart-title">Tu Carrito</h2>
+          <div class="cart-content"></div>
+          <!--Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
 
-                <div class="cart-content">
+          <!--boton comprar -->
+          <button type="button" class="btn-buy">Comprar ahora</button>
 
-
-                 </div>
-                <!--Total -->
-                <div class="total">
-                    <div class="total-title">Total</div>
-                    <div class="total-price">$0</div>
-                </div>
-
-                 <!--boton comprar --> 
-                <button type="button" class="btn-buy">Comprar ahora</button>
-            
-                <!--cerrar agregago de productos -->
-                <i class="bx bx-x" id="cart-close"></i>
-             </div>
+          <!--cerrar agregago de productos -->
+          <i class="bx bx-x" id="cart-close"></i>
         </div>
+      </div>
     </header>
 
-     <!--productos -->
-     
-     <section class="shop container">
-       <h2 class="section-title">Nuestos productos</h2> 
+    <!--productos -->
 
+    <section class="shop container">
+      <h2 class="section-title">Nuestos productos</h2>
 
-        <!--contenido --> 
-        <div class="shop-content">
+      <!--contenido -->
+      <div class="shop-content">
+        <!--caja 1 -->
+        <div class="product-box">
+          <img
+            src="../static/img/Abrigo.jpg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Campera</h2>
+          <span class="product-price">$1000</span>
+          <i class="bx bx bx-shopping-bag add-cart"></i>
+        </div>
 
-             <!--caja 1 -->
-             <div class="product-box">
-                <img src="../Proyecto Html/static/img/Abrigo.jpg" alt="" class="product-img">
-                <h2 class="product-title">Campera</h2>
-                <span class="product-price">$1000</span>
-                <i class="bx bx bx-shopping-bag add-cart"></i> 
-             </div> 
+        <div class="product-box">
+          <img
+            src="../static/img/Buzo.jpg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Buzo</h2>
+          <span class="product-price">$100</span>
+          <i class="bx bx bx-shopping-bag add-cart"></i>
+        </div>
 
-             <div class="product-box">
-                <img src="../Proyecto Html/static/img/Buzo.jpg" alt="" class="product-img">
-                <h2 class="product-title">Buzo</h2>
-                <span class="product-price">$100</span>
-                <i class="bx bx bx-shopping-bag add-cart"></i> 
-             </div> 
-             
-                <div class="product-box">
-                    <img src="../Proyecto Html/static/img/Camisa.jpg" alt="" class="product-img">
-                    <h2 class="product-title">Camisa</h2>
-                    <span class="product-price">$50</span>
-                    <i class="bx bx bx-shopping-bag add-cart"></i> 
-                </div> 
+        <div class="product-box">
+          <img
+            src="../static/img/Camisa.jpg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Camisa</h2>
+          <span class="product-price">$50</span>
+          <i class="bx bx bx-shopping-bag add-cart"></i>
+        </div>
 
-                <div class="product-box">
-                    <img src="../Proyecto Html/static/img/ConjunHombre.jpg" alt="" class="product-img">
-                    <h2 class="product-title">Conjunto Hombre</h2>
-                    <span class="product-price">$2000</span>
-                    <i class="bx bx bx-shopping-bag add-cart"></i> 
-                 </div> 
+        <div class="product-box">
+          <img
+            src="../static/img/ConjunHombre.jpg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Conjunto Hombre</h2>
+          <span class="product-price">$2000</span>
+          <i class="bx bx bx-shopping-bag add-cart"></i>
+        </div>
 
-                 <div class="product-box">
-                    <img src="../Proyecto Html/static/img/Conjunto.jpg" alt="" class="product-img">
-                    <h2 class="product-title">Conjunto</h2>
-                    <span class="product-price">$100</span>
-                    <i class="bx bx bx-shopping-bag add-cart"></i> 
-                 </div> 
+        <div class="product-box">
+          <img
+            src="../static/img/Conjunto.jpg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Conjunto</h2>
+          <span class="product-price">$100</span>
+          <i class="bx bx bx-shopping-bag add-cart"></i>
+        </div>
 
-                 <div class="product-box">
-                    <img src="../Proyecto Html/static/img/Jean.jpg" alt="" class="product-img">
-                    <h2 class="product-title">Jeans</h2>
-                    <span class="product-price">$1500</span>
-                    <i class="bx bx bx-shopping-bag add-cart"></i> 
-                 </div> 
+        <div class="product-box">
+          <img
+            src="../static/img/Jean.jpg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Jeans</h2>
+          <span class="product-price">$1500</span>
+          <i class="bx bx bx-shopping-bag add-cart"></i>
+        </div>
 
-                 <div class="product-box">
-                    <img src="../Proyecto Html/static/img/Remera.jpg" alt="" class="product-img">
-                    <h2 class="product-title">Remera</h2>
-                    <span class="product-price">$15</span>
-                    <i class="bx bx bx-shopping-bag add-cart"></i> 
-                 </div> 
+        <div class="product-box">
+          <img
+            src="../static/img/Remera.jpg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Remera</h2>
+          <span class="product-price">$15</span>
+          <i class="bx bx bx-shopping-bag add-cart"></i>
+        </div>
 
-                 <div class="product-box">
-                    <img src="../Proyecto Html/static/img/Zapatilla.jpg" alt="" class="product-img">
-                    <h2 class="product-title">Zapatilla</h2>
-                    <span class="product-price">$1200</span>
-                    <i class="bx bx bx-shopping-bag add-cart"></i> 
-                 </div> 
-        </div>    
-     </section>
+        <div class="product-box">
+          <img
+            src="../static/img/Zapatilla.jpg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Zapatilla</h2>
+          <span class="product-price">$1200</span>
+          <i class="bx bx bx-shopping-bag add-cart"></i>
+        </div>
+      </div>
+    </section>
 
-     <script src=""></script>
-
-</body>
+    <script src=""></script>
+  </body>
 </html>
