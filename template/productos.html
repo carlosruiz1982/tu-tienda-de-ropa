@@ -1,31 +1,41 @@
-<!DOCTYPE html>
+<!DOCTYPEhtml>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="IE-edge" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible"content="IE-edge"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
     <title>Tienda</title>
     <!--iconos de caja -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/412dca169c.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet"href="../static/css/style.css"/>
   </head>
   <body>
-    <header class="header-nav">
-      <h1><span>T</span>u <span>T</span>ienda de Ropa</h1>
-        <ul class="nav-links">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./productos.html">Productos</a></li>
-          <li><a href="./Contacto.html">Contacto</a></li>
-          <li><a href="./locales.html">Locales</a></li>
-          <li><a href="./cambios.html">Cambios</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="nav container">
+        <a href="#"class="logo"><span>T</span>ienda</a>
+
+        <i class="bx bx-shopping-bag"id="cart-icon"></i>
+        <div class="cart">
+          <h2 class="cart-title">Tu Carrito</h2>
+
+          <div class="cart-content"></div>
+          <!--Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+
+          <!--botoncomprar -->
+          <button type="button"class="btn-buy">Comprar ahora</button>
+
+          <!--cerraragregago de productos -->
+          <i class="bx bx-x"id="cart-close"></i>
+        </div>
+      </div>
     </header>
 
     <!--productos -->
@@ -125,38 +135,8 @@
         </div>
       </div>
     </section>
-    <footer class="footer-page">
-      <div class="group-one">
-        <div class="box">
-          <figure>
-            <div class="logo">
-              <a href="#">
-                <span>T</span>u <span>T</span>ienda de Ropa</a>
-              </a>
-            </div>
-          </figure>
-        </div>
-        <div class="box">
-          <h2>SOBRE NOSOTROS</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptate!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptate!</p>
-        </div>
-        <div class="box">
-          <h2>SIGUENOS</h2>
-          <div class="redes">
-            <a href="#" class="fa-brands fa-square-facebook"></a>
-            <a href="#" class="fa-brands fa-square-instagram"></a>
-            <a href="#" class="fa-brands fa-square-x-twitter"></a>
-            <a href="#" class="fa-brands fa-square-youtube"></a>
-          </div>
-        </div>
-      </div>
-      <div class="group-two">
-        <small>
-          &copy;2024 <b>Tu tienda de ropa</b> - Todos los Derechos Reservados
-        </small>
-      </div>
-    </footer>
-    <script src=""></script>
+
+    <script src="../static/js/product.js"></script>
   </body>
 </html>
+

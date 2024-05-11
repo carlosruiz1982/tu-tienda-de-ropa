@@ -1,92 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPEhtml>
+<htmllang="en">
 <head>
-
-
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <meta name="viewport" content="width=<form action=" agregar.php" method="post" style="width:50%;">
-        <title>Tu Tienda de Ropa</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="./static/css/style.css">
-        <link rel="shortcut icon" href="./static/img/tipografia.ico" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/412dca169c.js" crossorigin="anonymous"></script>
-</head>
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
 
+    <link rel="preconnect"href="https://fonts.googleapis.com">
+    <link rel="preconnect"href="https://fonts.gstatic.com"crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"rel="stylesheet">
+
+    <link rel="stylesheet"href="../static/css/style-contact.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js"crossorigin="anonymous"></script>
+
+</head>
 <body>
     <header class="header-nav">
         <h1><span>T</span>u <span>T</span>ienda de Ropa</h1>
-        <ul class="nav-links">
+          <ul class="nav-links">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./productos.html">Productos</a></li>
             <li><a href="./Contacto.html">Contacto</a></li>
-            <li><a href="#">Locales</a></li>
+            <li><a href="./locales.html">Locales</a></li>
             <li><a href="./cambios.html">Cambios</a></li>
-        </ul>
+          </ul>
         </nav>
-    </header>
-    <form action="agregar.php" method="post" style="width:50%;"></form>
-    <fieldset>
-        <legend>Datos</legend>
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" value="" size="30"><br>
-        <label for="apellido">Apellido</label>
-        <input type="text" name="apellido" id="apellido" value="" size="30"><br>
-        <label for="dni">DNI</label>
-        <input type="text" name="dni" id="dni" value="" maxlength="10">
-        <label for="dni">Telefono</label>
-        <input type="text" name="telefono" id="telefono" value="" maxlength="10">
-        <label for="dni">Salario</label>
-        <input type="text" name="mail" id="mail" value="">
-        <input type="hidden" name="tipo" id="tipo" value="">
-        <input type="hidden" name="emp_id" id="emp_id" value="">
-    </fieldset>
-
-    <fieldset id="btn" style="text-align:right;">
-        <legend>&nbsp;</legend>
-        <input type="submit" name="enviar" value="Enviar Datos">
-        <input type="reset" name="cancelar" value="Cancelar">
-    </fieldset>
-    </form>
-    <footer class="footer-page">
-        <div class="group-one">
-            <div class="box">
-                <figure>
-                    <div class="logo">
-                        <a href="#">
-                            <span>T</span>u <span>T</span>ienda de Ropa</a>
-                        </a>
-                    </div>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptate!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptate!</p>
-            </div>
-            <div class="box">
-                <h2>SIGUENOS</h2>
-                <div class="redes">
-                    <a href="#" class="fa-brands fa-square-facebook"></a>
-                    <a href="#" class="fa-brands fa-square-instagram"></a>
-                    <a href="#" class="fa-brands fa-square-x-twitter"></a>
-                    <a href="#" class="fa-brands fa-square-youtube"></a>
+      </header>
+    <main>
+        <section class="form-wrapper">
+           
+            <form action="#"id="formRegister"method="GET"novalidate>
+                <div class="form-control">
+                    <label>Nombre</label>
+                    <input type="text"requiredname="firstname"id="firstname">
                 </div>
-            </div>
-        </div>
-        <div class="group-two">
-            <small>
-                &copy;2024 <b>Tu tienda de ropa</b> - Todos los Derechos Reservados
-            </small>
-        </div>
-    </footer>
-    <script src=""></script>
+                <divc lass="error"id="error-firstname"></div>
+                <div class="form-control">
+                    <label>Apellido</label>
+                    <input type="text"requiredname="lastname"id="lastname">
+                </div>
+                <div class="error"id="error-lastname"></div>
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email"requiredname="email"id="email">
+                </div>
+                <div class="error"id="error-email"></div>
+                <div class="form-control">
+                    <label>Contraseña</label>
+                    <input type="password"requiredname="password"id="password">
+                </div>
+                <div class="error"id="error-password"></div>
+                <div class="form-control">
+                    <label id="label-birthdate">Fecha de Nacimiento</label>
+                    <input type="date"requiredname="birthdate"id="birthdate">
+                </div>
+                <div class="form-control">
+                    <select name="country"id="country"class="form-select">
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <optionvalue="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+                <div class="form-terms">
+                    <div class="terms">
+                        <input type="checkbox"id="terms">
+                        <label for="terms">Acepto términos y condiciones</label>
+                    </div>
+                </div>
+                <button type="button"id="btn-send">Registrarse</button>
+                <div class="form-help">
+                    <ah ref="#">Necesitasayuda?</a>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+    <script src="../static/js/registrar.js"></script>
 </body>
-<<<<<<< HEAD
-
-</html>
-=======
-</html>
->>>>>>> fb83efe22ce32bf01dda1f83919d0f9baeccf68f

@@ -1,4 +1,4 @@
-/abrir y cerrar parte comprar/
+
 
 const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
