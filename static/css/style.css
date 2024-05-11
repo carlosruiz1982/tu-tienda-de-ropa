@@ -1,7 +1,7 @@
-/*@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600;700&display=swap');*/
-
+@import "stylefooter.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 *{
-    font-family: 'poppins',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,12 +50,12 @@ body{
     background-color: var(--bg-color);
 }
 
-img{
+/*img{
     width: 100%;
-}
+}*/
 
-header{
-    position: fixed;
+.header-nav{
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -310,9 +310,6 @@ header{
         width:320px
     }
 
-    footer{
-        height:7vh;/*le agrege un diferente altura de vh*/
-    }
 }
 
 /* disp pequeños *//*este no lo pondria porque no hay dispositivos tan pequeños*/
@@ -338,7 +335,7 @@ body {
     line-height: 1.6;
 }
 
-header {
+.header-nav {
     background-color: #333;
     color: #fff;
     padding: 0.75rem;
@@ -347,36 +344,20 @@ header {
 }
 
 
-nav ul {
+.header-nav .nav-links {
     list-style-type: none;
 }
 
-nav ul li {
+.header-nav .nav-links li {
     display: inline;
     margin-right: 1rem;
 }
-
-nav ul li a {
+.header-nav .nav-links li a:hover{
+    color:#ffbc0e;
+} 
+.header-nav .nav-links li a {
     color: #fff;
     text-decoration: none;
-}
-/* 
-main {
-    /* padding: 2rem; */
-    /* el main contiene al div por eso tomaba esa
-}
-*/
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 0.5rem;/* baje el padin a 0.5*/
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: 2px solid var(--main-color);/*le agrege un borde*/
 }
 .carousel {
     width: 100%;
@@ -395,7 +376,8 @@ footer {
 }
 
 .carousel-item img {
-    width: 100%;
     height: 100%;
-    object-fit:cover; /* Ajusta la imagen al tamaño del slide */
+    
+    
+     /* Ajusta la imagen al tamaño del slide */
 }
