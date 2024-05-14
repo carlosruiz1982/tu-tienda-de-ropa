@@ -1,4 +1,41 @@
+
 .section-change h1{
-    color:aqua;
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.section-change h4{
+    font-size: 20px;
+}
+.section-change p{
+    font-size: 15px;
+}
+.section-change{
+    margin-top: 0;
+}
+.section-change .section-info{
     
+    justify-content:center;
+    align-items: center;
+    margin-left: 210px;
+    margin-right: 210px;    ;
+    border-left: 1px solid grey; /* Cambia el color según tu preferencia */
+    padding-left: 10px; /* Ajusta el espacio entre la línea y el texto */
+}
+.form-change{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.button-change{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    border: none;
+    color: white;
+}
+.button-change:hover{
+    background-color:dimgray;
 }
