@@ -1,4 +1,8 @@
 @import "stylefooter.css";
+@import "contact.css";
+@import "stylecontact.css";
+@import "style-cambios.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 *{
     font-family: 'Open Sans', sans-serif;
@@ -10,7 +14,6 @@
     scroll-behavior: smooth;
     scroll-padding: 2rem;
 }
-
 
 :root{
     --main-color: #ff002b;
@@ -29,7 +32,7 @@
     margin: auto;
     width: 100%;
 }
-a {
+.a {
     text-decoration: none;
     color: var(--text-color);
 }
@@ -37,7 +40,14 @@ section{
     padding: 4rem 0 3rem;
 }
 /*aca agrego un color a la letra  t  con el span*/
-span{
+.carousel-control-prev span{
+    font-weight: 600;
+    text-shadow: #333;
+    font-style: italic;
+    letter-spacing: 0.25rem;
+    color: var(--main-color);
+}
+.carousel-control-next span{
     font-weight: 600;
     text-shadow: #333;
     font-style: italic;
@@ -45,7 +55,7 @@ span{
     color: var(--main-color);
 }
 
-body{
+.product {
     color: var(--text-color);
     background-color: var(--bg-color);
 }
