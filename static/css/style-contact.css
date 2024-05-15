@@ -24,11 +24,7 @@ body::before {
     opacity: 0.5;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-    
-=======
     background: url("../img/bg-register.jpg");
->>>>>>> fe22212a885217680ec6251fe17aacec17e937ab
     background-position: center;
     background-size: cover;
 }
@@ -44,47 +40,6 @@ nav {
     font-weight: bold;
 
 }
-<<<<<<< HEAD
-.header-nav .nav-links {
-    list-style-type: none;
-}
-
-.header-nav .nav-links li {
-    display: inline;
-    margin-right: 1rem;
-}
-.header-nav .nav-links li a:hover{
-    color:#ffbc0e;
-} 
-.header-nav .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-}
-.header-nav{
-    
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--bg-color);
-    box-shadow: 0 1px 4px hsl(0, 4%, 15% / 10%);
-    z-index: 100;
-}
-
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-
-.container{
-    max-width: 1068px;
-    margin: auto;
-    width: 100%;
-}
-=======
->>>>>>> fe22212a885217680ec6251fe17aacec17e937ab
 
 
 nav a img {

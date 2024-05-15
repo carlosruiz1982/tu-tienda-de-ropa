@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-=======
 /abrir y cerrar parte comprar/
->>>>>>> fe22212a885217680ec6251fe17aacec17e937ab
 
 const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
