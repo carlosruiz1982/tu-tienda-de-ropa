@@ -1,4 +1,4 @@
-/abrir y cerrar parte comprar/
+/*abrir y cerrar parte comprar/
 
 const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
@@ -189,4 +189,4 @@ function cartBoxComponent(title, price, imgSrc){
 
       </div> `;
 
-}
+}*/
