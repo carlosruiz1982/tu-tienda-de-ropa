@@ -15,10 +15,17 @@
 
 </head>
 <body>
-    <header>
-        <div class="nav container">
-          <a href="#" class="logo"><span>T</span>ienda</a>
-        </div>
+    <header class="header-nav">
+        <h1><span>T</span>u <span>T</span>ienda de Ropa</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../template/productos.html">Productos</a></li>
+            <li><a href="../template/Contacto.html">Contacto</a></li>
+            <li><a href="../template/locales.html">Locales</a></li>
+            <li><a href="../template/cambios.html">Cambios</a></li>
+          </ul>
+        </nav>
       </header>
     <main>
         <section class="form-wrapper">
@@ -48,21 +55,7 @@
                     <label id="label-birthdate">Fecha de Nacimiento</label>
                     <input type="date" required name="birthdate" id="birthdate">
                 </div>
-                <div class="form-control">
-                    <select name="country" id="country" class="form-select">
-                        <option value="">País</option>
-                        <option value="AR">Argentina</option>
-                        <option value="BO">Bolivia</option>
-                        <option value="BR">Brasil</option>
-                        <option value="CH">Chile</option>
-                        <option value="CO">Colombia</option>
-                        <option value="EC">Ecuador</option>
-                        <option value="PY">Paraguay</option>
-                        <option value="PE">Perú</option>
-                        <option value="UY">Uruguay</option>
-                        <option value="VE">Venezuela</option>
-                    </select>
-                </div>
+                
                 <div class="form-terms"> 
                     <div class="terms">
                         <input type="checkbox" id="terms">
@@ -74,8 +67,10 @@
                     <a href="#">Necesitas ayuda?</a>
                 </div>
             </form>
+           
         </section>
         
     </main>
+    
     <script src="../static/js/registrar.js"></script>
 </body>

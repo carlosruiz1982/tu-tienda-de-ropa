@@ -3,23 +3,57 @@
 @import "stylecontact.css";
 @import "style-cambios.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-*{
-    font-family: 'Open Sans', sans-serif;
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #2a2a2a;
+    line-height: 1.6;
+}
+
+.header-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+    border-bottom: 1px solid var(--main-color);
+}
+
+
+.header-nav .nav-links {
+    list-style-type: none;
+}
+
+.header-nav .nav-links li {
+    display: inline;
+    margin-right: .9rem;
+}
+.header-nav .nav-links li a:hover{
+    color:#ffbc0e;
+} 
+.header-nav .nav-links li a {
+    color: #fff;
     text-decoration: none;
-    scroll-behavior: smooth;
-    scroll-padding: 2rem;
+}
+
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
 :root{
-    --main-color: #ff002b;
+    
     --sec-color: #4946fd;
     --text-color: #fdfffc;
-    --bg-color: #000814;
+    --bg-color: #333;
 }
 
 ::selection{
@@ -30,94 +64,18 @@
 .container{
     max-width: 1068px;
     margin: auto;
-    width: 100%;
+    width: 90%;
 }
 .a {
     text-decoration: none;
     color: var(--text-color);
 }
-section{
-    padding: 4rem 0 3rem;
-}
+
 /*aca agrego un color a la letra  t  con el span*/
-.carousel-control-prev span{
-    font-weight: 600;
-    text-shadow: #333;
-    font-style: italic;
-    letter-spacing: 0.25rem;
-    color: var(--main-color);
-}
-.carousel-control-next span{
-    font-weight: 600;
-    text-shadow: #333;
-    font-style: italic;
-    letter-spacing: 0.25rem;
-    color: var(--main-color);
-}
 
 .product {
     color: var(--text-color);
     background-color: var(--bg-color);
-}
-
-/*img{
-    width: 100%;
-}*/
-
-.header-nav{
-    
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--bg-color);
-    box-shadow: 0 1px 4px hsl(0, 4%, 15% / 10%);
-    z-index: 100;
-}
-
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.logo{
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--text-color);
-    text-transform: uppercase;
-}
-
-.logo span{
-    color: var(--main-color);
-    font-weight: bold;
-}
-
-#cart-icon{
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-
-.cart{
-    position: fixed;
-    top: 0;
-    right: 0;
-    right: -100%;
-    width: 360px;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: auto;
-    padding: 20px;
-    background-color: var(--bg-color);
-    box-shadow: -2px solid 4px hsl(0, 4, 15%c / 10%);
-    border: 1px solid var(--main-color);
-    transition: 1.7s;
-
-}
-
-.cart.active{
-    right: 0;
-    transition: .5s;
 }
 
 .cart-title{
@@ -332,62 +290,3 @@ section{
         width: 280px;
     }
 } 
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.header-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 0.75rem;
-    text-align: center;
-    border-bottom: 2px solid var(--main-color);
-}
-
-
-.header-nav .nav-links {
-    list-style-type: none;
-}
-
-.header-nav .nav-links li {
-    display: inline;
-    margin-right: 1rem;
-}
-.header-nav .nav-links li a:hover{
-    color:#ffbc0e;
-} 
-.header-nav .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-}
-.carousel {
-    width: 100%;
-    /*height: 75vh*/; /* Altura del carousel */
-    height: 94vh;
-    object-fit: cover;
-}
-
-.carousel-inner {
-    height: 100%; /* Asegura que el contenido del carousel tenga la misma altura que el carousel */
-}
-
-.carousel-item {
-    height: 100%; /* Asegura que cada slide tenga la misma altura que el carousel */
-    transition: opacity 1s ease-in-out;
-}
-
-.carousel-item img {
-    height: 100%;
-    
-    
-     /* Ajusta la imagen al tamaño del slide */
-}

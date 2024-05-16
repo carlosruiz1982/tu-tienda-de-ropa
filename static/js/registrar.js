@@ -15,7 +15,7 @@ btnSend.addEventListener('click',function(){
     }
     if(firstname.value.trim().length < 3){
         document.querySelector("#error-firstname").innerHTML ="El nombre no puede tener menos de 3 carecteres";
-       // alert('ERROR! Debes completar el campo Nombre');
+        alert('ERROR! Debes completar el campo Nombre');
      }
 
     if(lastname.value.trim()==''){
@@ -28,6 +28,6 @@ btnSend.addEventListener('click',function(){
         alert('ERROR! Debes completar el campo Apellido');
     }
 
-    // alert('Los datos fueron enviados...');
+     alert('Los datos fueron enviados...');
     // alert('Holaaaa! '+inputFirstname.value)
 });

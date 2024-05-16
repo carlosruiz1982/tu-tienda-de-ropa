@@ -1,41 +1,30 @@
-<!DOCTYPE html>
+<!DOCTYPEhtml>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="IE-edge" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible"content="IE-edge"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
     <title>Tienda</title>
     <!--iconos de caja -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/style-product.css" />
   </head>
   <body class="product">
-    <header>
-      <div class="nav container">
-        <a href="#" class="logo"><span>T</span>ienda</a>
-
-        <i class="bx bx-shopping-bag" id="cart-icon"></i>
-        <div class="cart">
-          <h2 class="cart-title">Tu Carrito</h2>
-
-          <div class="cart-content"></div>
-          <!--Total -->
-          <div class="total">
-            <div class="total-title">Total</div>
-            <div class="total-price">$0</div>
-          </div>
-
-          <!--boton comprar -->
-          <button type="button" class="btn-buy">Comprar ahora</button>
-
-          <!--cerrar agregago de productos -->
-          <i class="bx bx-x" id="cart-close"></i>
-        </div>
-      </div>
+    <header class="header-nav">
+      <h1><span>T</span>u <span>T</span>ienda de Ropa</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../template/productos.html">Productos</a></li>
+          <li><a href="../template/Contacto.html">Contacto</a></li>
+          <li><a href="../template/locales.html">Locales</a></li>
+          <li><a href="../template/cambios.html">Cambios</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--productos -->
@@ -139,3 +128,4 @@
     <script src="../static/js/product.js"></script>
   </body>
 </html>
+
