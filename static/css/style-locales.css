@@ -74,13 +74,13 @@ body{
 
 .flex-article  {
     /* background-color: rgba(29, 27, 167, 0.014); */
-    background-image:linear-gradient(-90deg,var(--bg2-color),var(--third-color));
+    background-image:linear-gradient(90deg,var(--bg2-color),var(--third-color));
     padding-top: 3rem;
     flex: 3 3;
 }
 .flex-aside{
     /* background-color: rgba(255, 0, 234, 0.493); */
-    background-image:linear-gradient(-90deg,var(--bg2-color),var(--third-color));
+    background-image:linear-gradient(90deg,var(--bg2-color),var(--third-color));
     padding-top: 3rem;
     /* flex: 1 1 5rem; */
     flex: 1 1 3rem;
