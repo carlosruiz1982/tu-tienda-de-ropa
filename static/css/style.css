@@ -39,6 +39,13 @@
 section{
     padding: 4rem 0 3rem;
 }
+.header-nav span{
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.25rem;
+    color: var(--main-color);
+
+}
 /*aca agrego un color a la letra  t  con el span*/
 .carousel-control-prev span{
     font-weight: 600;
