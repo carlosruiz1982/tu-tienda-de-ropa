@@ -3,19 +3,18 @@
 @import "stylecontact.css";
 @import "style-cambios.css";
 
-:root {
+:root{
+   
     --sec-color: #4946fd;
     --text-color: #fdfffc;
     --bg-color: #000814;
-    --main-color: #fff;
-    
-
 }
 
-* {
+* {    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -24,10 +23,6 @@ body {
     line-height: 1.6;
 }
 
-section {
-    padding: 20px;
-    min-height: 600px;
-}
 
 .header-nav {
     background-color: #333;
@@ -37,6 +32,7 @@ section {
     border-bottom: 2px solid var(--main-color);
 }
 
+
 .header-nav .nav-links {
     list-style-type: none;
 }
@@ -45,87 +41,70 @@ section {
     display: inline;
     margin-right: 1rem;
 }
-
-.header-nav .nav-links li a:hover {
-    color: #ffbc0e;
-}
-
+.header-nav .nav-links li a:hover{
+    color:#ffbc0e;
+} 
 .header-nav .nav-links li a {
     color: #fff;
     text-decoration: none;
 }
 
-.form-wrapper {
-    position: absolute;
-    left: 50%;
-    top: 58%; /* Cambiar el valor según sea necesario */
-    transform: translate(-50%, -50%);
-    padding: 20px 70px;
-    margin: 50px auto 0;
-    width: 100%;
-    max-width: 500px; /* Ancho máximo deseado */
-    background: rgba(42, 42, 42, 1);
-    border-radius: 8px; /* Agrega bordes redondeados */
-}
-.form-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
 
-.form-header h2 {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-right: 10px;
+.form-wrapper {
+    position: fixed;
+    left: 50%;
+    top: 65%;
+    padding: 20px 70px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background:rgba(42,42,42 ,1);
 }
 
 .form-wrapper h2 {
     color: #fff;
-    font-size: 1.5rem;
-    text-align: center; /* Centra el texto del título */
+    font-size: 1rem;
 }
 
 .form-wrapper form {
-    margin: 25px 0 10px;
+    margin: 30px 0 10px;
 }
 
 form .form-control {
-    height: 40px;
+    height: 50px;
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .form-control input {
     height: 100%;
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.1);
     border: 1px solid white;
     outline: none;
+    
     color: #fff;
     font-size: 0.8rem;
-    padding: 10px 20px;
-    border-radius: 4px; /* Agrega bordes redondeados */
+    padding: 0 20px;
 }
 
 .form-control input:is(:focus, :valid) {
     background: #444;
-    padding: 10px 20px;
+    padding: 16px 20px 0;
 }
 
 .form-control label {
     position: absolute;
-    left: 15px;
+    left: 20px;
     top: 50%;
     transform: translateY(-130%);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     pointer-events: none;
     color: #8c8c8c;
     transition: all 0.1s ease;
 }
 
-#birthdate {
-    padding: 16px 20px 0px;
+#birthdate{
+    padding:16px 20px 0px;
 }
 
 .form-control input:is(:focus, :valid)~label {
@@ -133,23 +112,24 @@ form .form-control {
     transform: translateY(-130%);
 }
 
+
 form button {
     width: 100%;
-    padding: 10px 0;
-    font-size: 0.9rem;
+    padding: 16px 0;
+    font-size: 1rem;
     background-color: var(--primary-color);
-    color: #fff;
+    color:#FFF;
     font-weight: 500;
     border-radius: 4px;
     border: none;
     outline: none;
-    margin: 20px 0 10px;
+    margin: 25px 0 10px;
     cursor: pointer;
     transition: 0.1s ease;
 }
 
-form button:hover {
-    color: var(--secondary-color)!important;
+form button:hover{
+    color:var(--secondary-color)!important;
 }
 
 .form-wrapper a {
@@ -167,7 +147,7 @@ form button:hover {
 form .form-terms {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 form .terms {
@@ -180,7 +160,7 @@ form .terms input {
 }
 
 form .form-terms :where(label, a) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .form-wrapper p a {
@@ -197,15 +177,12 @@ form .form-terms :where(label, a) {
     color: #0071eb;
 }
 
-.error {
+.error{
     color: red;
-    margin-bottom: 4%;
-    min-height: 20px;
+    margin-bottom: 3px;
 }
-
-.form-control input.error,
-.form-select.error {
-    border: 2px solid red;
+.form-control input.error, .form-select.error{
+    border: 1px solid red; 
 }
 
 @media (max-width: 740px) {
@@ -217,20 +194,15 @@ form .form-terms :where(label, a) {
         font-size: 1em;
         justify-content: center;
     }
-
-    nav,
-    .form-wrapper {
+    nav, .form-wrapper {
         padding: 20px;
     }
 
     .form-wrapper {
-        margin: 0 auto;
-        padding: 20px;
-        width: 90%;
-        max-width: 400px;
-        background: rgba(42, 42, 42, 1);
+        padding: 20px 70px;
+        margin-top: 30px;
     }
-
+    
     .form-wrapper form {
         margin: 25px 0 65px;
     }
@@ -238,4 +210,71 @@ form .form-terms :where(label, a) {
     nav a img {
         width: 140px;
     }
+
+    .form-wrapper {
+        width: 100%;
+        top: 50%;
+    }
+
+    .form-wrapper form {
+        margin: 25px 0 40px;
+    }
 }
+@media (max-width: 1080px){
+    .nav{
+        padding: 15px;
+    }
+    .container{
+        width:90%;
+        margin: 0 auto;
+    }
+    section{
+        padding:3rem 0 2rem;
+    }
+    .shop{
+        margin-top: 2rem;
+    }
+    
+}
+
+/*dispositivos medianos*/
+
+@media (max-width: 400px){
+    .nav{
+        padding: 11px;
+        
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .cart{
+        width:320px
+    }
+
+}
+/*dispositivos medianos*/
+
+@media (max-width: 400px){
+    .nav{
+        padding: 11px;
+        
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .cart{
+        width:320px
+    }
+
+}
+
+/* disp pequeños *//*este no lo pondria porque no hay dispositivos tan pequeños*/
+
+@media(max-width: 320px) {
+    .shop{
+        margin-top: 1rem;
+    }
+    .cart{
+        width: 280px;
+    }
+} 
