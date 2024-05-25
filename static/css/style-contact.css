@@ -179,10 +179,10 @@ form .form-terms :where(label, a) {
 
 .error{
     color: red;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 .form-control input.error, .form-select.error{
-    border: 2px solid red; 
+    border: 0.5px solid red; 
 }
 
 @media (max-width: 740px) {

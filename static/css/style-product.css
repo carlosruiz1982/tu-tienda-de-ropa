@@ -54,6 +54,7 @@ body {
     --sec-color: #4946fd;
     --text-color: #fdfffc;
     --bg-color: #333;
+    --main-color: #fff;
 }
 
 ::selection{
