@@ -5,12 +5,9 @@
     text-align: center;
     border-bottom: 2px solid var(--main-color);
 }
-
-
 .header-nav .nav-links {
     list-style-type: none;
 }
-
 .header-nav .nav-links li {
     display: inline;
     margin-right: .9rem;
@@ -21,6 +18,14 @@
 .header-nav .nav-links li a {
     color: #fff;
     text-decoration: none;
+}
+.header-nav span{
+    font-weight: 600;
+    text-shadow: #333;
+    font-style: italic;
+    letter-spacing: 0.25rem;
+    color: red;
+    
 }
 .section-change h1{
     font-size: 40px;
@@ -38,7 +43,6 @@
     margin-top: 0;
 }
 .section-change .section-info{
-    
     justify-content:center;
     align-items: center;
     margin-left: 210px;
@@ -135,7 +139,7 @@
 .footer-page .group-one .box span{
     font-weight: 600;
     text-shadow: #333;
-    
+    font-style: italic;
     letter-spacing: 0.25rem;
     color: red;
     
@@ -145,4 +149,129 @@
     text-align: center; /* Alinear texto al centro */
     width: 100%; /* Establecer ancho completo */
     padding-top: 50px;
+}
+.form-change .button-change{
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.section-change .change{
+    margin-top: 30px;
+}
+
+/* Estilo del modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilo del formulario */
+.body-change {
+    width: 100%;
+}
+
+.conteiner-change {
+    width: 100%;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-change {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conteiner-change form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-send {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.form-send span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-send input,
+.form-send select {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    box-sizing: border-box;
+}
+
+.form-send small {
+    color: red;
+    display: none;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-container button:hover {
+    background-color: dimgray;
 }

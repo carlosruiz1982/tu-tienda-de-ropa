@@ -2,6 +2,7 @@
 @import "contact.css";
 @import "stylecontact.css";
 @import "style-cambios.css";
+@import "style-form-cambios.css";
 
 
 * {
@@ -13,6 +14,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+}
+.carousel-inner{
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 5, 5, 5,5px;
+    
 }
 
 .header-nav {
@@ -41,13 +48,16 @@ body {
 }
 .carousel {
     width: 100%;
-    /*height: 75vh*/; /* Altura del carousel */
-    height: 94vh;
+    height: 75vh; /* Altura del carousel */
+    
     object-fit: cover;
 }
 
 .carousel-inner {
     height: 100%; /* Asegura que el contenido del carousel tenga la misma altura que el carousel */
+    display: flex;
+    align-items: center;
+    
 }
 
 .carousel-item {
@@ -57,7 +67,24 @@ body {
 
 .carousel-item img {
     height: 100%;
+    width: 70%;
+    object-fit:unset;
+    margin: 0 auto;
+}
+
+.header-nav span{
+    font-weight: 600;
+    text-shadow: #333;
+    font-style: italic;
+    letter-spacing: 0.25rem;
+    color: red;
     
+}
+.footer-page .group-one .box span{
+    font-weight: 600;
+    text-shadow: #333;
+    font-style: italic;
+    letter-spacing: 0.25rem;
+    color: red;
     
-     /* Ajusta la imagen al tamaño del slide */
 }

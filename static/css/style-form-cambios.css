@@ -1,0 +1,145 @@
+.form-group {
+    
+    flex-direction: row; /* Organiza los elementos en una fila */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.form-group label {
+    margin-right: 10px; /* Agrega un margen a la derecha de las etiquetas */
+    width: 100px; /* Establece un ancho fijo para las etiquetas */
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Ajusta el ancho de los campos de entrada */
+input[type="text"], input[type="email"], input[type="number"], input[type="url"], select, textarea {
+    flex: 1; /* Permite que los campos de entrada ocupen el espacio restante */
+    padding: 10px;
+    margin: 6px;
+    margin-top: 20px;
+    margin-right: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    width: calc(50% - 60px); /* Establece el ancho de los campos de entrada */
+}
+
+/* Ajusta el botón para ocupar ambas columnas */
+button {
+    display: flexbox;
+    justify-items: center;
+    width: 20%;
+    margin-left: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;   
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:dimgray;
+}
+.errores{
+    display: flex;
+
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 130px;
+}
+#error-nombre{
+    margin-left: 220px;
+}
+.container {
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container h2{
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.body-change {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #d7c6c6;
+}
+
+.conteiner-change {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-change {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conteiner-change form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-send {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.form-send span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-send input,
+.form-send select {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    box-sizing: border-box; /* Asegura que el padding no cause overflow */
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
