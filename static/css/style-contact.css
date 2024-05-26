@@ -1,6 +1,6 @@
 @import "stylefooter.css";
-@import "contact.css";
-@import "stylecontact.css";
+
+@import "style-contact.css";
 @import "style-cambios.css";
 
 :root{
@@ -167,11 +167,11 @@ form .form-terms :where(label, a) {
     color: #fff;
 }
 
-.form-wrapper small {
+/*.form-wrapper small {
     display: block;
     margin-top: 15px;
     color: #b3b3b3;
-}
+}*/
 
 .form-wrapper small a {
     color: #0071eb;
@@ -179,7 +179,7 @@ form .form-terms :where(label, a) {
 
 .error{
     color: red;
-    margin-bottom: 3px;
+    margin-bottom: .6px;
 }
 .form-control input.error, .form-select.error{
     border: 0.5px solid red; 
