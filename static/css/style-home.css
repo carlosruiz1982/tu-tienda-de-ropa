@@ -15,14 +15,16 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
-.carousel-inner{
+
+.carousel-inner {
     object-fit: cover;
     border-radius: 15px;
-    margin: 5, 5, 5,5px;
-    
+    margin: 5, 5, 5, 5px;
+
 }
 
-header, footer {
+header,
+footer {
     width: 100%;
 }
 
@@ -50,80 +52,87 @@ footer {
     display: inline;
     margin-right: .9rem;
 }
-.header-nav .nav-links li a:hover{
-    color:#ffbc0e;
-} 
+
+.header-nav .nav-links li a:hover {
+    color: #ffbc0e;
+}
+
 .header-nav .nav-links li a {
     color: #fff;
     text-decoration: none;
 }
+
 .carousel {
     width: 100%;
-<<<<<<< HEAD
-    height: 75vh; /* Altura del carousel */
-    
-=======
-    /*height: 75vh*/; /* Altura del carousel */
     height: 75vh;
->>>>>>> e4bcbc348390cce94be3dfa76fdd04f73ddfc9e4
+
+
+    /*height: 75vh*/
+    ;
+    /* Altura del carousel */
+    height: 75vh;
+
     object-fit: cover;
 }
 
 .carousel-inner {
-    height: 100%; /* Asegura que el contenido del carousel tenga la misma altura que el carousel */
+    height: 100%;
+    /* Asegura que el contenido del carousel tenga la misma altura que el carousel */
     display: flex;
     align-items: center;
-    
+
 }
 
 .carousel-item {
-    height: 100%; /* Asegura que cada slide tenga la misma altura que el carousel */
+    height: 100%;
+    /* Asegura que cada slide tenga la misma altura que el carousel */
     transition: opacity 1s ease-in-out;
 }
 
 .carousel-item img {
     height: 100%;
     width: 70%;
-    object-fit:unset;
+    object-fit: unset;
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
-.header-nav span{
+.header-nav span {
     font-weight: 600;
     text-shadow: #333;
     font-style: italic;
     letter-spacing: 0.25rem;
     color: red;
-    
-}
-.footer-page .group-one .box span{
-    font-weight: 600;
-    text-shadow: #333;
-    font-style: italic;
-    letter-spacing: 0.25rem;
-    color: red;
-    
-}
-=======
- /* Estilos para hacer el carrusel responsivo */
- .carousel-item img {
-    max-height: 500px; /* Altura máxima del carrusel */
-    width: auto; /* Ancho automático para mantener la proporción de aspecto */
-  }
 
-  /* Estilos para mejorar la transición */
-  .carousel-inner .carousel-item {
+}
+
+.footer-page .group-one .box span {
+    font-weight: 600;
+    text-shadow: #333;
+    font-style: italic;
+    letter-spacing: 0.25rem;
+    color: red;
+
+}
+
+/* Estilos para hacer el carrusel responsivo */
+.carousel-item img {
+    max-height: 500px;
+    /* Altura máxima del carrusel */
+    width: auto;
+    /* Ancho automático para mantener la proporción de aspecto */
+}
+
+/* Estilos para mejorar la transición */
+.carousel-inner .carousel-item {
     transition: opacity 0.5s ease-in-out;
-  }
+}
 
-  .carousel-inner .carousel-item.active {
+.carousel-inner .carousel-item.active {
     opacity: 1;
-  }
+}
 
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev,
-  .carousel-inner .carousel-item.active {
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev,
+.carousel-inner .carousel-item.active {
     display: flex;
-  }
->>>>>>> e4bcbc348390cce94be3dfa76fdd04f73ddfc9e4
+}

@@ -23,7 +23,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="url"]
 }
 
 /* Ajusta el botón para ocupar ambas columnas */
-button {
+.button-eject {
     display: flexbox;
     justify-items: center;
     width: 20%;
@@ -38,7 +38,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-button:hover{
+.button-eject:hover{
     background-color:dimgray;
 }
 .errores{
