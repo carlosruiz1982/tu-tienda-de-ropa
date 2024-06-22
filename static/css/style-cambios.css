@@ -47,8 +47,8 @@
     align-items: center;
     margin-left: 210px;
     margin-right: 210px;    ;
-    border-left: 1px solid grey; /* Cambia el color según tu preferencia */
-    padding-left: 10px; /* Ajusta el espacio entre la línea y el texto */
+    border-left: 1px solid grey; 
+    padding-left: 10px; 
 }
 .form-change{
     display: flex;
