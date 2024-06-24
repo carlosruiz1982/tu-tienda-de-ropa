@@ -1,9 +1,5 @@
 @import "stylefooter.css";
-
-@import "style-contact.css";
-@import "style-cambios.css";
-
-
+@import "style-home.css";
 * {
     margin: 0;
     padding: 0;
@@ -16,33 +12,7 @@ body {
     line-height: 1.6;
 }
 
-.header-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 0.75rem;
-    text-align: center;
-    border-bottom: 1px solid var(--main-color);
-}
-
-
-.header-nav .nav-links {
-    list-style-type: none;
-}
-
-.header-nav .nav-links li {
-    display: inline;
-    margin-right: .9rem;
-}
-.header-nav .nav-links li a:hover{
-    color:#ffbc0e;
-} 
-.header-nav .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 *{
-   
     margin: 0;
     padding: 0;
     box-sizing: border-box;

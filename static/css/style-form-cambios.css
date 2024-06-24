@@ -1,28 +1,28 @@
 .form-group {
     
-    flex-direction: row; /* Organiza los elementos en una fila */
-    align-items: center; /* Centra verticalmente los elementos */
+    flex-direction: row; 
+    align-items: center; 
 }
 
 .form-group label {
-    margin-right: 10px; /* Agrega un margen a la derecha de las etiquetas */
-    width: 100px; /* Establece un ancho fijo para las etiquetas */
+    margin-right: 10px; 
+    width: 100px; 
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Ajusta el ancho de los campos de entrada */
+
 input[type="text"], input[type="email"], input[type="number"], input[type="url"], select, textarea {
-    flex: 1; /* Permite que los campos de entrada ocupen el espacio restante */
+    flex: 1; 
     padding: 10px;
     margin: 6px;
     margin-top: 20px;
     margin-right: 15px;
     border: 2px solid #ccc;
     border-radius: 6px;
-    width: calc(50% - 60px); /* Establece el ancho de los campos de entrada */
+    width: calc(50% - 60px); 
 }
 
-/* Ajusta el botón para ocupar ambas columnas */
+
 .button-eject {
     display: flexbox;
     justify-items: center;
@@ -119,7 +119,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="url"]
     border: 1px solid #ccc;
     padding-left: 15px;
     border-bottom-width: 2px;
-    box-sizing: border-box; /* Asegura que el padding no cause overflow */
+    box-sizing: border-box; 
 }
 
 .button-container {

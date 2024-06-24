@@ -1,8 +1,5 @@
 @import "stylefooter.css";
-
-@import "style-contact.css";
-@import "style-cambios.css";
-@import "style-home";
+@import "style-home.css";
 
 *{
    

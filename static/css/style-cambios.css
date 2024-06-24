@@ -1,32 +1,5 @@
-.header-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 0.75rem;
-    text-align: center;
-    border-bottom: 2px solid var(--main-color);
-}
-.header-nav .nav-links {
-    list-style-type: none;
-}
-.header-nav .nav-links li {
-    display: inline;
-    margin-right: .9rem;
-}
-.header-nav .nav-links li a:hover{
-    color:#ffbc0e;
-} 
-.header-nav .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-}
-.header-nav span{
-    font-weight: 600;
-    text-shadow: #333;
-    font-style: italic;
-    letter-spacing: 0.25rem;
-    color: red;
-    
-}
+@import "stylefooter.css";
+@import "style-home.css";
 .section-change h1{
     font-size: 30px;
     align-items: center;
@@ -47,8 +20,8 @@
     align-items: center;
     margin-left: 210px;
     margin-right: 210px;    ;
-    border-left: 1px solid grey; /* Cambia el color según tu preferencia */
-    padding-left: 10px; /* Ajusta el espacio entre la línea y el texto */
+    border-left: 1px solid grey; 
+    padding-left: 10px; 
 }
 .form-change{
     display: flex;
@@ -66,90 +39,6 @@
 .button-change:hover{
     background-color:dimgray;
 }
-
-.footer-page{
-    width: 100%;
-    background-color: #333;
-}
-.footer-page .group-one{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-.footer-page .group-one .box figure{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer-page .group-one .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-.footer-page .group-one .box p{
-    color: #efefef;
-    margin-bottom: 10px;
-}
-.footer-page .group-one .redes a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #615c5c;
-    text-align: center;
-    transition: all 300ms ease;
-}
-.footer-page .group-one .redes a:hover{
-    color: cadetblue;
-}
-.footer-page .group-two{
-    background-color: #3b3737;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-}
-.footer-page .group-two small{
-    font-size: 15px;
-}
-@media screen and (max-width:800px) {
-    .footer-page .group-one{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-}
-.footer-page .group-one .box a{
-    font-size: 31px;
-    text-decoration: none;
-    color: #fff;
-    margin-left: 25px;
-
-    /*padding-top: 50px;*/
-}
-.footer-page .group-one .box span{
-    font-weight: 600;
-    text-shadow: #333;
-    font-style: italic;
-    letter-spacing: 0.25rem;
-    color: red;
-    
-}
-.footer-page .group-one .box figure{
-    display: inline-block; /* Cambiar a bloque para poder centrar */
-    text-align: center; /* Alinear texto al centro */
-    width: 100%; /* Establecer ancho completo */
-    padding-top: 50px;
-}
 .form-change .button-change{
     margin-bottom: 30px;
     text-decoration: none;
@@ -158,7 +47,7 @@
     margin-top: 30px;
 }
 
-/* Estilo del modal */
+
 .modal {
     display: none; 
     position: fixed; 
@@ -199,7 +88,7 @@
     text-decoration: none;
 }
 
-/* Estilo del formulario */
+
 .body-change {
     width: 100%;
 }
